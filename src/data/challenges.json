@@ -1,0 +1,159 @@
+[
+  {
+    "id": "chal_meatless_week",
+    "title": "Meatless Week",
+    "description": "Go 7 days without eating meat. Discover delicious plant-based alternatives!",
+    "category": "food",
+    "difficulty": "easy",
+    "durationDays": 7,
+    "dailyGoal": "No meat meals today",
+    "badgeId": "badge_plant_pioneer",
+    "estimatedSavingsKg": 16.8,
+    "tips": [
+      "Try lentil-based recipes — they're protein-packed!",
+      "Explore cuisines that are naturally vegetarian like Indian and Thai",
+      "Prep meals in advance to avoid temptation"
+    ],
+    "icon": "leaf"
+  },
+  {
+    "id": "chal_no_car_week",
+    "title": "Car-Free Week",
+    "description": "Leave the car at home for 7 days. Walk, bike, or take public transit instead.",
+    "category": "transport",
+    "difficulty": "easy",
+    "durationDays": 7,
+    "dailyGoal": "Zero car trips today",
+    "badgeId": "badge_pedal_power",
+    "estimatedSavingsKg": 25.0,
+    "tips": [
+      "Plan your routes using public transit apps",
+      "Combine errands to minimize trips",
+      "Try an e-bike for longer distances"
+    ],
+    "icon": "bike"
+  },
+  {
+    "id": "chal_unplug_week",
+    "title": "Unplug & Save",
+    "description": "Reduce standby power by unplugging devices when not in use for 7 days.",
+    "category": "energy",
+    "difficulty": "easy",
+    "durationDays": 7,
+    "dailyGoal": "Unplug at least 3 devices before bed",
+    "badgeId": "badge_energy_saver",
+    "estimatedSavingsKg": 5.6,
+    "tips": [
+      "Use a power strip to easily unplug multiple devices",
+      "Chargers draw power even when not connected to a device",
+      "Gaming consoles are major standby energy users"
+    ],
+    "icon": "plug-zap"
+  },
+  {
+    "id": "chal_food_waste",
+    "title": "Zero Food Waste",
+    "description": "Minimize food waste for 14 days through mindful shopping and meal planning.",
+    "category": "food",
+    "difficulty": "medium",
+    "durationDays": 14,
+    "dailyGoal": "No food thrown away today",
+    "badgeId": "badge_waste_warrior",
+    "estimatedSavingsKg": 35.0,
+    "tips": [
+      "Plan meals for the week before grocery shopping",
+      "Use the FIFO method: First In, First Out",
+      "Freeze leftovers instead of throwing them away",
+      "Compost what you can't eat"
+    ],
+    "icon": "trash-2"
+  },
+  {
+    "id": "chal_public_transit",
+    "title": "Transit Champion",
+    "description": "Use only public transit for all commutes for 14 days.",
+    "category": "transport",
+    "difficulty": "medium",
+    "durationDays": 14,
+    "dailyGoal": "Commute by public transit only",
+    "badgeId": "badge_transit_champion",
+    "estimatedSavingsKg": 45.0,
+    "tips": [
+      "Download your city's transit app for real-time updates",
+      "Bring a book or podcast for the journey",
+      "Consider a weekly/monthly transit pass for savings"
+    ],
+    "icon": "train"
+  },
+  {
+    "id": "chal_cold_shower",
+    "title": "Cold Shower Challenge",
+    "description": "Take cold showers for 14 days to save energy on water heating.",
+    "category": "energy",
+    "difficulty": "medium",
+    "durationDays": 14,
+    "dailyGoal": "Take a cold shower today",
+    "badgeId": "badge_ice_breaker",
+    "estimatedSavingsKg": 12.0,
+    "tips": [
+      "Start with lukewarm and gradually reduce temperature",
+      "Cold showers boost circulation and alertness",
+      "Even 2 minutes of cold water at the end helps"
+    ],
+    "icon": "snowflake"
+  },
+  {
+    "id": "chal_zero_waste",
+    "title": "Zero Waste Month",
+    "description": "Aim for zero waste for 30 days. Refuse, reduce, reuse, recycle, rot.",
+    "category": "shopping",
+    "difficulty": "hard",
+    "durationDays": 30,
+    "dailyGoal": "Generate minimal non-recyclable waste",
+    "badgeId": "badge_zero_hero",
+    "estimatedSavingsKg": 80.0,
+    "tips": [
+      "Bring reusable bags, bottles, and containers everywhere",
+      "Buy in bulk to reduce packaging",
+      "Choose products with minimal or recyclable packaging",
+      "Start composting at home"
+    ],
+    "icon": "recycle"
+  },
+  {
+    "id": "chal_vegan_30",
+    "title": "Vegan for 30 Days",
+    "description": "Go fully plant-based for an entire month. Your biggest impact challenge!",
+    "category": "food",
+    "difficulty": "hard",
+    "durationDays": 30,
+    "dailyGoal": "All meals fully plant-based",
+    "badgeId": "badge_earth_guardian",
+    "estimatedSavingsKg": 120.0,
+    "tips": [
+      "Stock up on beans, lentils, tofu, and tempeh",
+      "Learn to make plant-based versions of your favorites",
+      "B12 supplement is recommended for extended vegan diets",
+      "Connect with vegan communities for recipes and support"
+    ],
+    "icon": "sprout"
+  },
+  {
+    "id": "chal_no_buy",
+    "title": "No-Buy Challenge",
+    "description": "30 days without buying non-essential items. Focus on what you truly need.",
+    "category": "shopping",
+    "difficulty": "hard",
+    "durationDays": 30,
+    "dailyGoal": "No non-essential purchases",
+    "badgeId": "badge_minimalist",
+    "estimatedSavingsKg": 65.0,
+    "tips": [
+      "Make a list of essentials vs. wants before the challenge",
+      "Implement a 48-hour rule for any purchase temptation",
+      "Use what you already own creatively",
+      "Track money saved alongside carbon saved"
+    ],
+    "icon": "ban"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "question": "How do you usually get around?",
+    "description": "Your primary mode of transportation",
+    "key": "transport",
+    "icon": "car",
+    "options": [
+      { "value": "car_daily", "label": "Drive daily", "emoji": "🚗", "impact": "high" },
+      { "value": "car_weekly", "label": "Drive a few times a week", "emoji": "🚙", "impact": "medium" },
+      { "value": "public_transit", "label": "Public transit mostly", "emoji": "🚆", "impact": "low" },
+      { "value": "bike", "label": "Bike or e-bike", "emoji": "🚲", "impact": "minimal" },
+      { "value": "walk", "label": "Walk / work from home", "emoji": "🚶", "impact": "minimal" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What's your typical diet?",
+    "description": "Food choices have a huge impact on your footprint",
+    "key": "diet",
+    "icon": "utensils",
+    "options": [
+      { "value": "heavy_meat", "label": "Meat with most meals", "emoji": "🥩", "impact": "high" },
+      { "value": "omnivore", "label": "Mixed diet, some meat", "emoji": "🍽️", "impact": "medium" },
+      { "value": "pescatarian", "label": "Fish, no meat", "emoji": "🐟", "impact": "low" },
+      { "value": "vegetarian", "label": "Vegetarian", "emoji": "🥗", "impact": "low" },
+      { "value": "vegan", "label": "Fully plant-based", "emoji": "🌱", "impact": "minimal" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What kind of home do you live in?",
+    "description": "Housing size affects energy consumption",
+    "key": "housing",
+    "icon": "home",
+    "options": [
+      { "value": "large_house", "label": "Large house (4+ rooms)", "emoji": "🏠", "impact": "high" },
+      { "value": "small_house", "label": "Small house (2-3 rooms)", "emoji": "🏡", "impact": "medium" },
+      { "value": "apartment", "label": "Apartment / flat", "emoji": "🏢", "impact": "low" },
+      { "value": "shared", "label": "Shared living space", "emoji": "👥", "impact": "minimal" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How is your home powered?",
+    "description": "Energy source makes a big difference",
+    "key": "energy",
+    "icon": "zap",
+    "options": [
+      { "value": "fossil", "label": "Mostly fossil fuels (gas/coal)", "emoji": "🏭", "impact": "high" },
+      { "value": "mixed", "label": "Mixed / grid default", "emoji": "🔌", "impact": "medium" },
+      { "value": "renewable", "label": "Renewable energy plan", "emoji": "💨", "impact": "low" },
+      { "value": "solar", "label": "Solar panels at home", "emoji": "☀️", "impact": "minimal" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "How often do you shop for non-essentials?",
+    "description": "Clothing, gadgets, and impulse buys",
+    "key": "shopping",
+    "icon": "shopping-bag",
+    "options": [
+      { "value": "frequent", "label": "Weekly online orders", "emoji": "📦", "impact": "high" },
+      { "value": "moderate", "label": "A few times a month", "emoji": "🛒", "impact": "medium" },
+      { "value": "minimal", "label": "Only when needed", "emoji": "🎯", "impact": "low" },
+      { "value": "secondhand", "label": "Mostly second-hand / thrift", "emoji": "♻️", "impact": "minimal" }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "How often do you fly?",
+    "description": "Air travel is one of the biggest single-activity emitters",
+    "key": "travel",
+    "icon": "plane",
+    "options": [
+      { "value": "frequent", "label": "Monthly flights", "emoji": "✈️", "impact": "high" },
+      { "value": "occasional", "label": "A few times a year", "emoji": "🛫", "impact": "medium" },
+      { "value": "rare", "label": "Once a year or less", "emoji": "🎫", "impact": "low" },
+      { "value": "never", "label": "I don't fly", "emoji": "🚫", "impact": "minimal" }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "The Hidden Cost of Fast Fashion",
+    "category": "shopping",
+    "readTime": "3 min",
+    "content": "The fashion industry is responsible for 10% of global carbon emissions. A single pair of jeans requires 7,500 liters of water to produce. By choosing quality over quantity, buying second-hand, or organizing clothing swaps, you can significantly reduce your fashion footprint. Consider a capsule wardrobe approach — fewer, versatile pieces that last longer.",
+    "icon": "shirt",
+    "tags": ["fashion", "water", "waste"]
+  },
+  {
+    "id": 2,
+    "title": "Why Your Diet Matters Most",
+    "category": "food",
+    "readTime": "4 min",
+    "content": "Food production accounts for 26% of global greenhouse gas emissions. Animal agriculture alone contributes 14.5% of all emissions. Shifting even one meal per day from meat to plant-based can reduce your food carbon footprint by 30-50%. Start with 'Meatless Mondays' and explore cuisines that are naturally plant-forward like Mediterranean, Indian, and East Asian cooking.",
+    "icon": "salad",
+    "tags": ["diet", "meat", "plant-based"]
+  },
+  {
+    "id": 3,
+    "title": "The Electric Vehicle Revolution",
+    "category": "transport",
+    "readTime": "3 min",
+    "content": "Electric vehicles produce 50-70% fewer emissions over their lifetime compared to gasoline cars, even accounting for battery production. But the greenest option is still reducing trips altogether. Combining errands, carpooling, cycling for short distances, and working from home when possible can cut your transport emissions dramatically.",
+    "icon": "car",
+    "tags": ["EV", "commute", "cycling"]
+  },
+  {
+    "id": 4,
+    "title": "Home Energy: Quick Wins",
+    "category": "energy",
+    "readTime": "3 min",
+    "content": "Simple changes at home can reduce energy bills by 20-30%. Start with LED bulbs (75% less energy), smart power strips (eliminate phantom loads), and a programmable thermostat. Washing clothes in cold water, air-drying when possible, and running full dishwasher loads can save hundreds of kWh per year.",
+    "icon": "lightbulb",
+    "tags": ["efficiency", "LED", "thermostat"]
+  },
+  {
+    "id": 5,
+    "title": "Understanding Carbon Offsets",
+    "category": "general",
+    "readTime": "5 min",
+    "content": "Carbon offsets fund projects that reduce emissions elsewhere — like reforestation, renewable energy, or methane capture. While not a substitute for reducing your own emissions, quality offsets can help neutralize what you can't eliminate. Look for Gold Standard or Verified Carbon Standard certifications. Prioritize reducing first, then offset what remains.",
+    "icon": "trees",
+    "tags": ["offsets", "reforestation", "standards"]
+  },
+  {
+    "id": 6,
+    "title": "The Impact of Food Waste",
+    "category": "food",
+    "readTime": "3 min",
+    "content": "One-third of all food produced globally is wasted. When food decomposes in landfills, it produces methane — a greenhouse gas 80x more potent than CO₂ over 20 years. Plan meals, use leftovers creatively, freeze what you can't eat soon, and compost scraps. A family of four can save $1,500/year by reducing food waste.",
+    "icon": "trash-2",
+    "tags": ["waste", "methane", "composting"]
+  },
+  {
+    "id": 7,
+    "title": "Water: The Invisible Footprint",
+    "category": "general",
+    "readTime": "4 min",
+    "content": "Water treatment and distribution consume significant energy. Shorter showers (5 min saves 35 liters), fixing leaks, and using water-efficient appliances reduce both water use and energy. Your 'virtual water' footprint — water used to produce goods you buy — is often 10x your direct usage. A cotton t-shirt needs 2,700 liters of water to produce.",
+    "icon": "droplets",
+    "tags": ["water", "virtual-water", "efficiency"]
+  },
+  {
+    "id": 8,
+    "title": "Renewable Energy at Home",
+    "category": "energy",
+    "readTime": "4 min",
+    "content": "Even without solar panels, you can choose renewable energy. Many utilities offer green energy plans at little to no extra cost. Community solar programs let you benefit from solar without installing panels. If you can install, residential solar typically pays for itself in 6-8 years and can reduce your home's carbon footprint by 80%.",
+    "icon": "sun",
+    "tags": ["solar", "renewable", "green-energy"]
+  },
+  {
+    "id": 9,
+    "title": "The Circular Economy Mindset",
+    "category": "shopping",
+    "readTime": "3 min",
+    "content": "Instead of the linear 'take-make-waste' model, the circular economy keeps products in use as long as possible. Repair instead of replace. Buy refurbished electronics. Donate or sell items you no longer need. Choose products designed for durability and repairability. Every item kept in circulation avoids the emissions of manufacturing a new one.",
+    "icon": "recycle",
+    "tags": ["circular", "repair", "reuse"]
+  },
+  {
+    "id": 10,
+    "title": "Digital Carbon Footprint",
+    "category": "energy",
+    "readTime": "3 min",
+    "content": "The internet produces about 3.7% of global emissions — similar to the airline industry. Streaming video, cloud storage, and cryptocurrency mining are major contributors. You can help by reducing video quality when HD isn't needed, unsubscribing from unnecessary emails, deleting old cloud files, and choosing green-powered data centers when possible.",
+    "icon": "monitor",
+    "tags": ["digital", "streaming", "cloud"]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "transport": {
+    "driving":        { "factor": 0.17,  "unit": "kg CO₂/km", "label": "Driving", "icon": "car" },
+    "public_transit": { "factor": 0.04,  "unit": "kg CO₂/km", "label": "Public Transit", "icon": "train" },
+    "cycling":        { "factor": 0.0,   "unit": "kg CO₂/km", "label": "Cycling", "icon": "bike" },
+    "flying":         { "factor": 0.255, "unit": "kg CO₂/km", "label": "Flying", "icon": "plane" },
+    "walking":        { "factor": 0.0,   "unit": "kg CO₂/km", "label": "Walking", "icon": "footprints" }
+  },
+  "food": {
+    "meat_meal":      { "factor": 3.3,   "unit": "kg CO₂/meal", "label": "Meat Meal", "icon": "beef" },
+    "vegetarian":     { "factor": 1.7,   "unit": "kg CO₂/meal", "label": "Vegetarian Meal", "icon": "salad" },
+    "vegan":          { "factor": 0.9,   "unit": "kg CO₂/meal", "label": "Vegan Meal", "icon": "vegan" },
+    "food_waste":     { "factor": 2.5,   "unit": "kg CO₂/kg", "label": "Food Waste", "icon": "trash-2" },
+    "local_produce":  { "factor": 0.5,   "unit": "kg CO₂/meal", "label": "Local Produce", "icon": "apple" }
+  },
+  "energy": {
+    "electricity":    { "factor": 0.5,   "unit": "kg CO₂/kWh", "label": "Electricity", "icon": "zap" },
+    "heating_gas":    { "factor": 2.0,   "unit": "kg CO₂/hour", "label": "Gas Heating", "icon": "flame" },
+    "cooling":        { "factor": 1.5,   "unit": "kg CO₂/hour", "label": "Air Conditioning", "icon": "snowflake" },
+    "appliances":     { "factor": 0.3,   "unit": "kg CO₂/hour", "label": "Appliances", "icon": "monitor" },
+    "solar":          { "factor": -0.5,  "unit": "kg CO₂/kWh", "label": "Solar Energy", "icon": "sun" }
+  },
+  "shopping": {
+    "clothing":       { "factor": 10.0,  "unit": "kg CO₂/item", "label": "New Clothing", "icon": "shirt" },
+    "electronics":    { "factor": 50.0,  "unit": "kg CO₂/item", "label": "Electronics", "icon": "smartphone" },
+    "groceries":      { "factor": 1.5,   "unit": "kg CO₂/bag", "label": "Grocery Shopping", "icon": "shopping-cart" },
+    "secondhand":     { "factor": 0.5,   "unit": "kg CO₂/item", "label": "Second-hand", "icon": "recycle" },
+    "packaging":      { "factor": 0.8,   "unit": "kg CO₂/item", "label": "Packaged Goods", "icon": "package" }
+  }
+}

@@ -1,0 +1,29 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.layout__main {
+  flex: 1;
+  padding: var(--space-lg);
+  padding-bottom: calc(72px + var(--space-lg));
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Desktop: offset for sidebar */
+@media (min-width: 1024px) {
+  .layout__main {
+    margin-left: 240px;
+    padding: var(--space-xl) var(--space-2xl);
+    padding-bottom: var(--space-xl);
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .layout__main {
+    padding: var(--space-lg) var(--space-xl);
+    padding-bottom: calc(72px + var(--space-xl));
+  }
+}

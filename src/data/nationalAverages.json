@@ -1,0 +1,44 @@
+{
+  "global": {
+    "label": "World Average",
+    "annualTonnes": 4.7,
+    "dailyKg": 12.9,
+    "breakdown": { "transport": 25, "food": 30, "energy": 30, "shopping": 15 }
+  },
+  "us": {
+    "label": "United States",
+    "annualTonnes": 15.5,
+    "dailyKg": 42.5,
+    "breakdown": { "transport": 35, "food": 20, "energy": 32, "shopping": 13 }
+  },
+  "eu": {
+    "label": "European Union",
+    "annualTonnes": 6.8,
+    "dailyKg": 18.6,
+    "breakdown": { "transport": 28, "food": 25, "energy": 32, "shopping": 15 }
+  },
+  "uk": {
+    "label": "United Kingdom",
+    "annualTonnes": 5.5,
+    "dailyKg": 15.1,
+    "breakdown": { "transport": 30, "food": 22, "energy": 33, "shopping": 15 }
+  },
+  "india": {
+    "label": "India",
+    "annualTonnes": 1.9,
+    "dailyKg": 5.2,
+    "breakdown": { "transport": 18, "food": 35, "energy": 35, "shopping": 12 }
+  },
+  "china": {
+    "label": "China",
+    "annualTonnes": 7.4,
+    "dailyKg": 20.3,
+    "breakdown": { "transport": 20, "food": 22, "energy": 45, "shopping": 13 }
+  },
+  "sustainable_target": {
+    "label": "Sustainable Target (2030)",
+    "annualTonnes": 2.0,
+    "dailyKg": 5.5,
+    "breakdown": { "transport": 20, "food": 30, "energy": 30, "shopping": 20 }
+  }
+}

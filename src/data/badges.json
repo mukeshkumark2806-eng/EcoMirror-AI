@@ -1,0 +1,146 @@
+[
+  {
+    "id": "badge_first_step",
+    "name": "First Step",
+    "description": "Complete the onboarding quiz",
+    "icon": "🌱",
+    "rarity": "common",
+    "color": "#34d399",
+    "criteria": { "type": "onboarding_complete" }
+  },
+  {
+    "id": "badge_logger",
+    "name": "Dedicated Logger",
+    "description": "Log activities for 7 consecutive days",
+    "icon": "📝",
+    "rarity": "common",
+    "color": "#60a5fa",
+    "criteria": { "type": "streak", "value": 7 }
+  },
+  {
+    "id": "badge_first_log",
+    "name": "Getting Started",
+    "description": "Log your first activity",
+    "icon": "✅",
+    "rarity": "common",
+    "color": "#34d399",
+    "criteria": { "type": "total_logs", "value": 1 }
+  },
+  {
+    "id": "badge_ten_logs",
+    "name": "Data Driven",
+    "description": "Log 10 activities",
+    "icon": "📊",
+    "rarity": "common",
+    "color": "#60a5fa",
+    "criteria": { "type": "total_logs", "value": 10 }
+  },
+  {
+    "id": "badge_plant_pioneer",
+    "name": "Plant Pioneer",
+    "description": "Complete the Meatless Week challenge",
+    "icon": "🌿",
+    "rarity": "uncommon",
+    "color": "#34d399",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_meatless_week" }
+  },
+  {
+    "id": "badge_pedal_power",
+    "name": "Pedal Power",
+    "description": "Complete the Car-Free Week challenge",
+    "icon": "🚲",
+    "rarity": "uncommon",
+    "color": "#f472b6",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_no_car_week" }
+  },
+  {
+    "id": "badge_energy_saver",
+    "name": "Energy Saver",
+    "description": "Complete the Unplug & Save challenge",
+    "icon": "⚡",
+    "rarity": "uncommon",
+    "color": "#facc15",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_unplug_week" }
+  },
+  {
+    "id": "badge_waste_warrior",
+    "name": "Waste Warrior",
+    "description": "Complete the Zero Food Waste challenge",
+    "icon": "♻️",
+    "rarity": "uncommon",
+    "color": "#fb923c",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_food_waste" }
+  },
+  {
+    "id": "badge_transit_champion",
+    "name": "Transit Champion",
+    "description": "Complete the Transit Champion challenge",
+    "icon": "🚆",
+    "rarity": "uncommon",
+    "color": "#60a5fa",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_public_transit" }
+  },
+  {
+    "id": "badge_ice_breaker",
+    "name": "Ice Breaker",
+    "description": "Complete the Cold Shower challenge",
+    "icon": "🧊",
+    "rarity": "uncommon",
+    "color": "#67e8f9",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_cold_shower" }
+  },
+  {
+    "id": "badge_earth_guardian",
+    "name": "Earth Guardian",
+    "description": "Complete the Vegan 30-Day challenge",
+    "icon": "🌍",
+    "rarity": "rare",
+    "color": "#34d399",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_vegan_30" }
+  },
+  {
+    "id": "badge_zero_hero",
+    "name": "Zero Hero",
+    "description": "Complete the Zero Waste Month challenge",
+    "icon": "🏆",
+    "rarity": "rare",
+    "color": "#fbbf24",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_zero_waste" }
+  },
+  {
+    "id": "badge_minimalist",
+    "name": "Mindful Minimalist",
+    "description": "Complete the No-Buy challenge",
+    "icon": "🧘",
+    "rarity": "rare",
+    "color": "#a78bfa",
+    "criteria": { "type": "challenge_complete", "challengeId": "chal_no_buy" }
+  },
+  {
+    "id": "badge_streak_master",
+    "name": "Streak Master",
+    "description": "Maintain a 30-day logging streak",
+    "icon": "🔥",
+    "rarity": "rare",
+    "color": "#f87171",
+    "criteria": { "type": "streak", "value": 30 }
+  },
+  {
+    "id": "badge_fifty_logs",
+    "name": "Eco Enthusiast",
+    "description": "Log 50 activities",
+    "icon": "⭐",
+    "rarity": "rare",
+    "color": "#fbbf24",
+    "criteria": { "type": "total_logs", "value": 50 }
+  },
+  {
+    "id": "badge_eco_master",
+    "name": "EcoMaster",
+    "description": "Complete 5 challenges",
+    "icon": "💎",
+    "rarity": "legendary",
+    "color": "#c084fc",
+    "criteria": { "type": "challenges_completed", "value": 5 }
+  }
+]
