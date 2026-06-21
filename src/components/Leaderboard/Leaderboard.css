@@ -1,0 +1,38 @@
+.leaderboard {
+  padding: 1rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+}
+.leaderboard-table tr.current-user {
+  background: var(--color-highlight);
+}
+.my-rank {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+  .leaderboard {
+    --color-bg: #1a1a1a;
+    --color-text: #f0f4ff;
+    --color-divider: #333;
+    --color-highlight: #2e3a5c;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .leaderboard {
+    --color-bg: #fff;
+    --color-text: #111;
+    --color-divider: #e0e0e0;
+    --color-highlight: #f0f8ff;
+  }
+}

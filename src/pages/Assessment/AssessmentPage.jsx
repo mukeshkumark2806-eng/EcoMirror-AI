@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -9,7 +9,6 @@ import {
 } from 'lucide-react';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useLanguage } from '../../context/LanguageContext';
-import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import './AssessmentPage.css';
 
 /* ── Wizard Step Data ───────────────────────────────────── */
@@ -123,11 +122,11 @@ export default function AssessmentPage() {
     food: null,
     water: null,
   });
-  const [, setAssessmentResult] = useAssessmentResult();
 
   const currentStep = STEPS[step];
   const totalSteps = STEPS.length;
-  const progress = ((step + 1) / totalSteps) * 100;
+  // Progress: 0% on step 0 before anything, 100% when on the last step
+  const progress = (step / (totalSteps - 1)) * 100;
 
   const STEP_LABELS = [
     t('assessment.step.transport.title', 'Transport'),
@@ -211,8 +210,18 @@ export default function AssessmentPage() {
         responses,
         completedAt: new Date().toISOString(),
       };
-      
-      setAssessmentResult(result);
+
+      // ── FIX: Write synchronously BEFORE navigating ──────────────────────────
+      // useLocalStorage flushes via useEffect (after paint). If we call
+      // navigate() first, ResultsPage mounts and reads localStorage before the
+      // write has occurred, finds null, and redirects back — creating the loop.
+      // Writing directly here guarantees the value exists when ResultsPage mounts.
+      try {
+        localStorage.setItem('ecomirror_assessment_result', JSON.stringify(result));
+      } catch (e) {
+        console.warn('[EcoMirror] Could not persist assessment result:', e.message);
+      }
+
       navigate('/results');
     }
   };
