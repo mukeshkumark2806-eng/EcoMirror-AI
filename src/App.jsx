@@ -7,6 +7,7 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { UserProvider, useUser } from './context/UserContext';
+import { GamificationProvider } from './context/GamificationContext';
 import { ToastProvider } from './context/ToastContext';
 import { LanguageProvider } from './context/LanguageContext';
 import LanguageSwitcher from './components/ui/LanguageSwitcher';
@@ -101,13 +102,15 @@ export default function App() {
       <BrowserRouter>
         <ScrollToTop />
         <UserProvider>
-          <ToastProvider>
-            <LanguageProvider>
-              <AppRoutes />
-              <LanguageSwitcher />
-              <ToastContainer />
-            </LanguageProvider>
-          </ToastProvider>
+          <GamificationProvider>
+            <ToastProvider>
+              <LanguageProvider>
+                <AppRoutes />
+                <LanguageSwitcher />
+                <ToastContainer />
+              </LanguageProvider>
+            </ToastProvider>
+          </GamificationProvider>
         </UserProvider>
       </BrowserRouter>
     </ErrorBoundary>

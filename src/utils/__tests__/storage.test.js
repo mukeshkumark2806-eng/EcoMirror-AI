@@ -3,7 +3,7 @@
  * @module utils/__tests__/storage.test
  */
 
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import {
   safeRead,
   safeWrite,
@@ -37,6 +37,19 @@ describe('safeWrite', () => {
   it('returns true on successful write', () => {
     expect(safeWrite('ecomirror_key', { x: 2 })).toBe(true);
     expect(safeRead('ecomirror_key')).toEqual({ x: 2 });
+  });
+
+  it('returns false and warns if localStorage throws', () => {
+    const spySet = vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new Error('quota exceeded');
+    });
+    const spyWarn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    
+    expect(safeWrite('ecomirror_key', 42)).toBe(false);
+    expect(spyWarn).toHaveBeenCalled();
+    
+    spySet.mockRestore();
+    spyWarn.mockRestore();
   });
 });
 
@@ -76,6 +89,18 @@ describe('validateImportPayload', () => {
     });
     expect(result.sanitized).not.toHaveProperty('evil');
     expect(result.sanitized).not.toHaveProperty('ecomirror_unknown_key');
+  });
+
+  it('warns and skips non-serialisable circular import values', () => {
+    const circularObj = {};
+    circularObj.self = circularObj;
+    const spy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+
+    const result = validateImportPayload({ ecomirror_user: circularObj });
+    expect(result.valid).toBe(false);
+    expect(spy).toHaveBeenCalled();
+
+    spy.mockRestore();
   });
 });
 

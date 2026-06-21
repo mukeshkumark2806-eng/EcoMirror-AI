@@ -5,6 +5,7 @@ import { Send, ArrowRight, ChevronLeft } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 import { SafeText } from '../../utils/sanitize';
+import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import './EcoCoachPage.css';
 
 /* ================================================================
@@ -209,13 +210,8 @@ export default function EcoCoachPage() {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
-  /* Load assessment */
-  const assessmentResult = useMemo(() => {
-    try {
-      const data = localStorage.getItem('ecomirror_assessment_result');
-      return data ? JSON.parse(data) : null;
-    } catch { return null; }
-  }, []);
+  /* Load assessment result from hook */
+  const [assessmentResult] = useAssessmentResult();
 
   const ecoScore = assessmentResult?.ecoScore || 50;
   const responses = assessmentResult?.responses || {};

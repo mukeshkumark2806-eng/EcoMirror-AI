@@ -10,6 +10,7 @@ import {
 import { useLanguage } from '../../context/LanguageContext';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 import { SafeText } from '../../utils/sanitize';
+import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import {
   getTransportLabel,
   getFoodLabel,
@@ -72,15 +73,8 @@ export default function ResultsPage() {
 
   useDocumentTitle('Results');
 
-  /* Load result from localStorage */
-  const result = useMemo(() => {
-    try {
-      const data = localStorage.getItem('ecomirror_assessment_result');
-      return data ? JSON.parse(data) : null;
-    } catch {
-      return null;
-    }
-  }, []);
+  /* Load result from hook */
+  const [result] = useAssessmentResult();
 
   /* Redirect if no result */
   useEffect(() => {

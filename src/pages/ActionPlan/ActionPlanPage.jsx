@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Download, MessageCircle, RotateCcw } from 'lucide-react';
 import AnimatedCounter from '../../components/ui/AnimatedCounter';
 import { useLanguage } from '../../context/LanguageContext';
+import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import './ActionPlanPage.css';
 
 /* ================================================================
@@ -248,12 +249,7 @@ export default function ActionPlanPage() {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
-  const assessmentResult = useMemo(() => {
-    try {
-      const data = localStorage.getItem('ecomirror_assessment_result');
-      return data ? JSON.parse(data) : null;
-    } catch { return null; }
-  }, []);
+  const [assessmentResult] = useAssessmentResult();
 
   /* Priority translation mapping */
   const getPriorityAction = (p) => {

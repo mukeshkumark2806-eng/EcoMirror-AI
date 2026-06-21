@@ -12,75 +12,9 @@ import { useRef, useEffect, useState, useMemo } from 'react';
 import { SafeText } from '../../utils/sanitize';
 import './LandingPage.css';
 
-/* ─── Animated counter hook ─── */
-function useAnimatedCounter(target, duration = 2000, shouldStart = false) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    if (!shouldStart) return;
-    let startTime = null;
-    const step = (timestamp) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * target));
-      if (progress < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }, [target, duration, shouldStart]);
-  return count;
-}
-
-/* ─── Section wrapper with scroll reveal ─── */
-function RevealSection({ children, className = '', delay = 0 }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-80px' });
-  return (
-    <motion.section
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, y: 60 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.7, delay, ease: [0.4, 0, 0.2, 1] }}
-    >
-      {children}
-    </motion.section>
-  );
-}
-
-/* ─── Section heading ─── */
-function SectionHeading({ badge, title, highlight, subtitle }) {
-  return (
-    <div className="lp-section-heading">
-      {badge && <span className="lp-badge">{badge}</span>}
-      <h2 className="lp-section-title">
-        {title} {highlight && <span className="text-gradient">{highlight}</span>}
-      </h2>
-      {subtitle && <p className="lp-section-subtitle">{subtitle}</p>}
-    </div>
-  );
-}
-
-/* ─── Stat counter card ─── */
-function StatCard({ icon: Icon, value, suffix, label, color, delay, shouldStart }) {
-  const count = useAnimatedCounter(value, 2200, shouldStart);
-  return (
-    <motion.div
-      className="lp-stat-card glass"
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={shouldStart ? { opacity: 1, scale: 1 } : {}}
-      transition={{ duration: 0.5, delay }}
-      whileHover={{ y: -6, scale: 1.03 }}
-    >
-      <div className="lp-stat-icon" style={{ '--stat-color': color }}>
-        <Icon size={26} />
-      </div>
-      <div className="lp-stat-value" style={{ color }}>
-        {count.toLocaleString()}{suffix}
-      </div>
-      <div className="lp-stat-label">{label}</div>
-    </motion.div>
-  );
-}
+import RevealSection from './components/RevealSection';
+import SectionHeading from './components/SectionHeading';
+import StatCard from './components/StatCard';
 
 export default function LandingPage() {
   const navigate = useNavigate();

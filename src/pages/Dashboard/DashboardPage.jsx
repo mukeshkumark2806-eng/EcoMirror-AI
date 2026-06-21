@@ -14,6 +14,7 @@ import AnimatedCounter from '../../components/ui/AnimatedCounter';
 import { useUser } from '../../context/UserContext';
 import { useLanguage } from '../../context/LanguageContext';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
+import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import {
   calcScoreFromResponses,
   getImpactLevel,
@@ -128,13 +129,8 @@ export default function DashboardPage() {
 
   useDocumentTitle('Dashboard');
 
-  /* Load assessment result from localStorage */
-  const assessmentResult = useMemo(() => {
-    try {
-      const data = localStorage.getItem('ecomirror_assessment_result');
-      return data ? JSON.parse(data) : null;
-    } catch { return null; }
-  }, []);
+  /* Load assessment result from hook */
+  const [assessmentResult] = useAssessmentResult();
 
   /* Active improvement toggles */
   const [activeToggles, setActiveToggles] = useState({

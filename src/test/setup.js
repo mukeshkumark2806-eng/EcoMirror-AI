@@ -5,6 +5,17 @@
 
 import '@testing-library/jest-dom';
 
+// Mock IntersectionObserver for Framer Motion / react-intersection-observer
+global.IntersectionObserver = class IntersectionObserver {
+  constructor() {}
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};
+
+// Mock scrollIntoView for smooth scroll effects in components like EcoCoachPage
+window.HTMLElement.prototype.scrollIntoView = function() {};
+
 // Clear localStorage before each test to ensure isolation
 beforeEach(() => {
   localStorage.clear();

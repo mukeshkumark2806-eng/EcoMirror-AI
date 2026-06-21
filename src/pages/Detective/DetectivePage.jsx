@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, RotateCcw, Sparkles, Search } from 'lucide-react';
 import AnimatedCounter from '../../components/ui/AnimatedCounter';
 import { useLanguage } from '../../context/LanguageContext';
+import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import './DetectivePage.css';
 
 /* ================================================================
@@ -153,13 +154,8 @@ export default function DetectivePage() {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
-  /* Load assessment from localStorage */
-  const assessmentResult = useMemo(() => {
-    try {
-      const data = localStorage.getItem('ecomirror_assessment_result');
-      return data ? JSON.parse(data) : null;
-    } catch { return null; }
-  }, []);
+  /* Load assessment result from hook */
+  const [assessmentResult] = useAssessmentResult();
 
   /* Simulator toggles */
   const [simToggles, setSimToggles] = useState({

@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useLanguage } from '../../context/LanguageContext';
+import { useAssessmentResult } from '../../hooks/useAssessmentResult';
 import './AssessmentPage.css';
 
 /* ── Wizard Step Data ───────────────────────────────────── */
@@ -122,6 +123,7 @@ export default function AssessmentPage() {
     food: null,
     water: null,
   });
+  const [, setAssessmentResult] = useAssessmentResult();
 
   const currentStep = STEPS[step];
   const totalSteps = STEPS.length;
@@ -210,7 +212,7 @@ export default function AssessmentPage() {
         completedAt: new Date().toISOString(),
       };
       
-      localStorage.setItem('ecomirror_assessment_result', JSON.stringify(result));
+      setAssessmentResult(result);
       navigate('/results');
     }
   };
