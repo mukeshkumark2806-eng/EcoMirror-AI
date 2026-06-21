@@ -309,7 +309,7 @@ export default function AssessmentPage() {
       {/* Step Card (animated) */}
       <div className="assessment__card">
         <AnimatePresence mode="wait" custom={direction}>
-          <motion.div
+           <motion.div
             key={step}
             className="assessment__card-inner"
             custom={direction}
@@ -317,6 +317,7 @@ export default function AssessmentPage() {
             initial="enter"
             animate="center"
             exit="exit"
+            data-testid={`step-${currentStep.id}`}
           >
             {/* Step Header */}
             <div className="assessment__step-header">
